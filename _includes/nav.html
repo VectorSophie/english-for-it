@@ -1,0 +1,11 @@
+<nav class="site-nav">
+  <ul>
+    {% assign ordered = site.nav_order %}
+    {% for label in ordered %}
+      {% assign page_obj = site.pages | where_exp: 'p', "p.title == label" | first %}
+      {% if page_obj %}
+        <li><a href="{{ page_obj.url | relative_url }}" {% if page.url == page_obj.url %}class="active"{% endif %}>{{ label }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>

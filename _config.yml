@@ -1,0 +1,30 @@
+title: "English for IT"
+description: "기술 영어 학습 가이드"
+lang: ko-KR
+baseurl: "" # Netlify root
+url: "" # Will be set by Netlify
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-seo-tag
+permalink: pretty
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - netlify.toml
+  - README.md
+  - LICENSE
+
+# Navigation order (used by custom include)
+nav_order:
+  - 00. 개요
+  - 01. 당신이 당신의 문제를 스스로 만든다
+  - 02. 번역기의 배신
+  - 03. 영어가 아니라 기술 영어다
+  - 04. 단어장이 아니라 문장이다
+  - 05. 마스터플랜 - 실전에서 살아남기
+  - 06. 녹슬지 않는 기술 영어 만들기
