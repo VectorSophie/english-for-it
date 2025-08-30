@@ -61,4 +61,28 @@ bundle exec jekyll serve --livereload
 - Sitemap (`jekyll-sitemap`)
 
 ## 라이선스
-MIT
+이 문서 모음은 **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** 라이선스를 따릅니다.
+
+요약:
+- 출처(프로젝트명: "English for IT", 원문 저장소 링크) 표기 필수
+- 변경/수정 시 변경사항 명시
+- 동일 조건(ShareAlike)으로 2차 저작물 공개 - 카피레프트 라이선스입니다.
+- 코드 스니펫이 매우 짧은 예제 수준이라면 (저작권 보호 한계 영역) 자유롭게 사용 가능하나 가능하면 출처 유지 권장
+
+정식 전문: https://creativecommons.org/licenses/by-sa/4.0/
+
+논리 구조(목차 순서), 글의 흐름, 문체는 저작권 보호 대상이며 CC BY-SA 조건 하에서만 재배포/수정 가능합니다.
+
+## 기여(Contribution) 가이드
+교정, 오탈자 수정, 표현 개선, 내용 확장 Pull Request 환영합니다. 
+
+자세한 내용은 [CONTRIBUTING.md](./CONTRIBUTING.md) 참고하세요.
+
+## 빠른 시작 (기여자용 체크리스트)
+1. Issue 또는 PR 초안 생성 (큰 변경 시 권장)
+2. 로컬 브랜치 생성: `feat/semaphore-section-update` 형식 권장
+3. 수정 후 미리보기: `bundle exec jekyll serve`
+4. 자체 검수: 링크 / 맞춤법 / 용어 일관성
+5. PR 템플릿 형식에 맞춰 설명 (없는 경우 첫 줄에 타입 작성)
+
+감사합니다! 여러분의 작은 기여가 문서를 더 정확하고 읽기 쉽게 만듭니다.

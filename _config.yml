@@ -4,6 +4,7 @@ lang: ko-KR
 baseurl: "" # Netlify root
 url: "" # Will be set by Netlify
 markdown: kramdown
+license: "CC BY-SA 4.0"
 plugins:
   - jekyll-seo-tag
 permalink: pretty
