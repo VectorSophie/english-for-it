@@ -38,6 +38,19 @@ bundle exec jekyll serve --livereload
 
 `netlify.toml` 에 설정이 포함되어 있어 추가 설정 없이 배포됩니다.
 
+### (선택) minima 테마 사용하고 싶다면?
+현재 `_config.yml` 에서 `theme: minima` 를 제거하여 커스텀 레이아웃(`_layouts/default.html`)만 사용합니다. 만약 minima 기반으로 가고 싶다면:
+
+1. Gemfile 최상단에 아래 추가:
+	```ruby
+	gem "minima", "~> 2.5"
+	```
+2. `_config.yml` 에 `theme: minima` 다시 추가
+3. 필요시 `_includes/nav.html` / `_layouts/default.html` 수정 또는 삭제 (minima의 기본 레이아웃 사용)
+4. `bundle install` 후 다시 배포
+
+테마를 잇는 대신 현재 방식은 불필요한 의존성을 줄여 빌드 속도를 약간 단축합니다.
+
 ## 중복 파일 관련
 `01.` 챕터 파일이 두 개 존재했으나 (`01. 당신의 당신의 문제를 스스로 만든다.md` / 오타 변형) 현재 `01. 당신의 당신의 문제를 스스로 만든다.md` 파일을 canonical 로 간주합니다. 다른 변형은 필요시 삭제하거나 redirect 구성을 할 수 있습니다.
 

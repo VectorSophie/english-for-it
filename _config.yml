@@ -4,7 +4,6 @@ lang: ko-KR
 baseurl: "" # Netlify root
 url: "" # Will be set by Netlify
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-seo-tag
 permalink: pretty
